@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix/core/const.dart';
 import 'package:netflix/presentation/search/widgets/search_idle.dart';
- import 'package:netflix/presentation/search/widgets/search_result.dart';
+
 
 
 
