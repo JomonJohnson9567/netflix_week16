@@ -11,5 +11,7 @@ abstract class Downloads with _$Downloads {
   }) = _Downloads;
 
   factory Downloads.fromJson(Map<String, dynamic> json) =>
-      _$DownloadsFromJson(json);
+  _$DownloadsFromJson(json);
 }
+
+ 
