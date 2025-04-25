@@ -28,64 +28,67 @@ class ScreenHome extends StatelessWidget {
               return true;
             },
 
-            child: Stack(
-              children: [
-                ListView(
-                  children: [
-                    BackgroundCardWidget(),
-                    MainTitleCard(title: 'Released in past years'),
-                    kheight10,
-                    MainTitleCard(title: 'Trending Now'),
-                    kheight10,
-                    NumbertitleCard(),
-                    MainTitleCard(title: 'Tense Dramas'),
-                    kheight10,
-                    MainTitleCard(title: 'South Indian Cinema'),
-                  ],
-                ),
-                scrollNotifier.value == true
-                    ? AnimatedContainer(
-                      duration: const Duration(milliseconds: 3),
-                      width: double.infinity,
-                      height: 80,
-                      color: Colors.black87,
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Image(
-                                image: NetworkImage(klogourl),
-                                width: 50,
-                                height: 50,
-                              ),
-                              const Spacer(),
-                              Icon(
-                                Icons.cast,
-                                color: Colors.white,
-                              ), // Replace with your desired icon
-                              kwidth10,
-                              Container(
-                                width: 30,
-                                height: 30,
-                                color: kbluecolor,
-                              ),
-                              kwidth10,
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Text('TV Shows', style: kHomeTitleText),
-                              Text('Movies', style: kHomeTitleText),
-                              Text('Categories', style: kHomeTitleText),
-                              Icon(Icons.draw),
-                            ],
-                          ),
-                        ],
-                      ),
-                    )
-                    : kheight10,
-              ],
+            child: Padding(
+              padding: const EdgeInsets.only(left: 10, right: 10),
+              child: Stack(
+                children: [
+                  ListView(
+                    children: [
+                      BackgroundCardWidget(),
+                      MainTitleCard(title: 'Released in past years'),
+                      kheight10,
+                      MainTitleCard(title: 'Trending Now'),
+                      kheight10,
+                      NumbertitleCard(),
+                      MainTitleCard(title: 'Tense Dramas'),
+                      kheight10,
+                      MainTitleCard(title: 'South Indian Cinema'),
+                    ],
+                  ),
+                  scrollNotifier.value == true
+                      ? AnimatedContainer(
+                        duration: const Duration(milliseconds: 3),
+                        width: double.infinity,
+                        height: 80,
+                        color: Colors.black87,
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Image(
+                                  image: NetworkImage(klogourl),
+                                  width: 50,
+                                  height: 50,
+                                ),
+                                const Spacer(),
+                                Icon(
+                                  Icons.cast,
+                                  color: Colors.white,
+                                ), // Replace with your desired icon
+                                kwidth10,
+                                Container(
+                                  width: 30,
+                                  height: 30,
+                                  color: kbluecolor,
+                                ),
+                                kwidth10,
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text('TV Shows', style: kHomeTitleText),
+                                Text('Movies', style: kHomeTitleText),
+                                Text('Categories', style: kHomeTitleText),
+                                Icon(Icons.draw),
+                              ],
+                            ),
+                          ],
+                        ),
+                      )
+                      : kheight10,
+                ],
+              ),
             ),
           );
         },
