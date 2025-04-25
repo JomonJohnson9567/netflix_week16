@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix/core/colors/colors.dart';
 import 'package:netflix/core/const.dart';
 import 'package:netflix/presentation/downloads/widgets/download_image_widget.dart';
- 
+
 
 class SectionTwo extends StatelessWidget {
   SectionTwo({super.key});
