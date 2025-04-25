@@ -6,6 +6,7 @@ import 'package:netflix/presentation/downloads/widgets/download_image_widget.dar
 
 class SectionTwo extends StatelessWidget {
   SectionTwo({super.key});
+  
 
   final List imageList = [
     'https://occ-0-6501-3663.1.nflxso.net/dnm/api/v6/-klpX4b1RECP-oGX3Uvz90PrgHE/AAAABYHo0V2bhrd-QLe1R5jmftASfTB3u5_4uNHdYwQLE1YAXzvUMnggh45B_3fmWIvmMHSZVAQOXcMZrXmYi28fPvyXPBhRWzYeDipXRi_w7ZG2s6pF5wlu1_t1bTpZHirUD0MfvZExoHCCQJmPWn-t.webp?r=95f',
