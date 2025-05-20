@@ -1,30 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:netflix/core/colors/colors.dart';
-import 'package:netflix/presentation/main_page/widgets/screen_main_page.dart';
+
+import 'package:netflix/core/colors.dart';
+import 'package:netflix/presentation/main(bottomNav)/bottomnav.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
+      home: Bottomnav(),
+      title: "NetFlix",
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: AppBarTheme(backgroundColor: Colors.transparent),
-        scaffoldBackgroundColor: backdropGroupColor,
-        primaryColor: Colors.black,
-        textTheme: const TextTheme(
+        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: backroundColor,
+        textTheme: TextTheme(
           bodyLarge: TextStyle(color: Colors.white),
           bodyMedium: TextStyle(color: Colors.white),
         ),
       ),
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Netflix Clone',
-      home: ScreenMainPage(),
     );
   }
 }

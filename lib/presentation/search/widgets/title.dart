@@ -1,19 +1,14 @@
-import 'package:flutter/material.dart';
-import 'package:netflix/core/colors/colors.dart';
+import 'package:flutter/cupertino.dart';
 
-class SearchTextTitle extends StatelessWidget {
+class SearchTitle extends StatelessWidget {
   final String title;
-  const SearchTextTitle({super.key, required this.title});
+  const SearchTitle({Key? key, required this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: TextStyle(
-        color: kwhiteColor,
-        fontSize: 22,
-        fontWeight: FontWeight.bold,
-      ),
+      style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
     );
   }
 }
